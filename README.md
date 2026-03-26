@@ -68,3 +68,4 @@ You will immediately be prompted to register or login. Create an account, test t
 *Built with Flask, SQLite, HTML5, Bootstrap 5, and Custom CSS.*
 # Student-Management-System
 A full-stack web application to manage student records with authentication and CRUD operations using
+<img width="1894" height="867" alt="image" src="https://github.com/user-attachments/assets/9ad23d65-d527-4f74-bb85-366b7bf6be1f" />
