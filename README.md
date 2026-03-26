@@ -71,3 +71,10 @@ A full-stack web application to manage student records with authentication and C
 # Screenshot
 ## Login-Page
 <img width="1894" height="867" alt="image" src="https://github.com/user-attachments/assets/9ad23d65-d527-4f74-bb85-366b7bf6be1f" />
+## Dashboard
+<img width="1891" height="869" alt="image" src="https://github.com/user-attachments/assets/06f5172c-966e-4551-baba-b05debcbb092" />
+## AddStudent-Page
+<img width="1889" height="875" alt="image" src="https://github.com/user-attachments/assets/3b19acd4-0098-4d91-a26d-daae2e396154" />
+## Edit-Page
+<img width="1887" height="873" alt="image" src="https://github.com/user-attachments/assets/6dee7a09-4ea7-4cb5-bad4-d485b859712a" />
+
