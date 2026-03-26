@@ -1,0 +1,61 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+<div class="row justify-content-center page-anim">
+    <div class="col-md-8 col-lg-6">
+        <div class="form-card">
+            <div class="d-flex align-items-center mb-4 pb-3 border-bottom">
+                <div class="brand-icon me-3" style="width: 48px; height: 48px; font-size: 1.25rem; background: #fef3c7; color: #d97706; box-shadow: none;">
+                    <i class="fas fa-user-edit"></i>
+                </div>
+                <div>
+                    <h2 class="mb-0" style="font-size: 1.25rem; font-weight: 700; color: #111827;">Edit Student Profile</h2>
+                    <p class="text-muted mb-0" style="font-size: 0.85rem;">Update the record details for {{ student['name'] }}.</p>
+                </div>
+            </div>
+
+            <form action="{{ url_for('edit', id=student['id']) }}" method="POST">
+                
+                <div class="mb-4">
+                    <label for="name" class="form-label">Full Name</label>
+                    <div class="icon-input-wrapper">
+                        <i class="fas fa-user"></i>
+                        <input type="text" id="name" name="name" value="{{ student['name'] }}" class="form-control-modern" required autofocus>
+                    </div>
+                </div>
+                
+                <div class="mb-4">
+                    <label for="email" class="form-label">Email Address</label>
+                    <div class="icon-input-wrapper">
+                        <i class="fas fa-envelope"></i>
+                        <input type="email" id="email" name="email" value="{{ student['email'] }}" class="form-control-modern" required>
+                    </div>
+                </div>
+                
+                <div class="row">
+                    <div class="col-sm-6 mb-4">
+                        <label for="course" class="form-label">Course / Program</label>
+                        <div class="icon-input-wrapper">
+                            <i class="fas fa-graduation-cap"></i>
+                            <input type="text" id="course" name="course" value="{{ student['course'] }}" class="form-control-modern" required>
+                        </div>
+                    </div>
+                    
+                    <div class="col-sm-6 mb-4">
+                        <label for="phone" class="form-label">Phone Number</label>
+                        <div class="icon-input-wrapper">
+                            <i class="fas fa-phone-alt"></i>
+                            <input type="text" id="phone" name="phone" value="{{ student['phone'] }}" class="form-control-modern" required>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="d-flex justify-content-end gap-3 mt-4 pt-4 border-top">
+                    <a href="{{ url_for('index') }}" class="btn-modern btn-light-modern">Cancel</a>
+                    <button type="submit" class="btn-modern btn-primary-modern"><i class="fas fa-save me-2"></i> Update Record</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+{% endblock %}
